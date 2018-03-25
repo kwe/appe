@@ -5,7 +5,7 @@ class Link extends Component {
     return (
       <div>
         <div>
-          <li>{this.props.link.description} ({this.props.link.url})</li>
+          <li>{this.props.link.description} (<a href={`${this.props.link.url}`}>{this.props.link.url}</a>)</li>
         </div>
       </div>
     )
